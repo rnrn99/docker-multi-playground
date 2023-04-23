@@ -15,7 +15,9 @@ after_success:
   - docker build -t rnrn99/docker-frontend ./frontend
   - docker build -t rnrn99/docker-backend ./backend
   - docker build -t rnrn99/docker-nginx ./nginx
+
   - echo "$DOCKER_HUB_PASSWORD" | docker login -u "$DOCKER_HUB_ID" --password-stdin
+
   - docker push rnrn99/docker-frontend
   - docker push rnrn99/docker-backend
   - docker push rnrn99/docker-nginx
