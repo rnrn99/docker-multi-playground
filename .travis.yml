@@ -25,8 +25,8 @@ after_success:
 deploy:
   provider: elasticbeanstalk
   region: "ap-northeast-2"
-  app: "jiyu-docker-multi-test"
-  env: Jiyu-docker-multi-test-env
+  app: "jiyu-test-2"
+  env: Jiyu-test-2-env
   bucket_name: jiyu-docker-multi-test
   bucket_path: "jiyu-docker-multi-test"
   on:
